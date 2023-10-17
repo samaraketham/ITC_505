@@ -1,0 +1,110 @@
+/* Outermost paper background */
+html {
+    background-color: #f3f8fd;  /* Pale blue shade for the paper */
+}
+
+body {
+    font-family: 'Georgia', Times, serif;  /* Elegant and professional-looking font */
+    margin: 40px auto;
+    max-width: 1100px;
+    line-height: 1.6;
+    color: #333;
+    background-color: #eaf2f8;  /* Pale blue background for the body */
+    padding: 50px 60px;
+    border: 1px solid #d4e2ed;
+}
+
+article {
+    background-color: #f8fbfe;  
+    padding: 60px 70px;
+    margin: 20px 0;
+    border: 1px solid #cddaed;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.1);
+    column-count: 2;
+    column-gap: 50px;
+}
+
+div[align="center"] {
+    text-align: center;
+    padding: 30px 0;
+    column-span: all;
+    margin-bottom: 40px;
+    background-color: #cddaed;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Arial', sans-serif;  /* Using a sans-serif font for headings */
+    margin-top: 30px;
+}
+
+h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #345b9d;
+    border-bottom: 2px solid #345b9d;
+    padding-bottom: 10px;
+}
+
+h4 {
+    font-size: 22px;
+    font-style: italic;
+    margin-bottom: 30px;
+    color: #5679b2;
+}
+
+h2, h3 {
+    font-size: 26px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #d4e2ed;
+    padding-bottom: 10px;
+    background-color: #e5ecf4;
+    padding: 5px 15px;
+}
+
+p {
+    font-size: 18px;  /* Increased font-size for better readability */
+    text-align: justify;
+    margin-bottom: 25px;
+    padding: 0 10px;
+    position: relative; /* Added for the highlight effect */
+}
+
+p > em {
+    color: #345b9d;  /* Deep blue color to differentiate from the regular text */
+    padding: 4px 8px;  /* Some padding for the highlight effect */
+    background-color: #e5ecf4;  /* Slight blue shade for emphasis background */
+    border-radius: 4px;  /* Smooth out the edges of the background */
+    font-style: normal;  /* Remove the italic style */
+    font-weight: bold;  /* Make the emphasized text bold */
+}
+strong {
+    display: block;
+    margin-top: 20px;
+    font-weight: bold;
+    color: #555;
+}
+
+section {
+    margin-top: 40px;
+    padding-bottom: 20px;
+    border-left: 4px solid #b2c7e0;
+    padding-left: 16px;
+}
+
+section > p {
+    margin-top: 20px;
+}
+
+section > section {
+    margin-top: 25px;
+    border-left: 3px solid #d4e2ed;
+    padding-left: 13px;
+}
+
+@media print {
+    html, body, article {
+        border: none;
+        box-shadow: none;
+        background-color: transparent;
+    }
+}
